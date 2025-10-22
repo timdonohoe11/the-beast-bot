@@ -42,7 +42,7 @@ class TheBeastV3:
         self.trades = []
         self.solana_tokens = self.get_solana_tokens()
         self.day_cache = {}
-        num_scan = 10 if mode == 'backtest' else 50  # Apex: Full hunt
+        num_scan = 10 if mode == 'backtest' else 10  # Apex: Full hunt
         self.async_client = None
         self.keypair = None
         self.jupiter = None
